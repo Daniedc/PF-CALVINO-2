@@ -1,0 +1,36 @@
+@mixin card-trabajo-home{
+    img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .card-informacion{
+        h2{
+            font-family: montserrat;
+            font-weight: 800;
+            font-size: 20px;
+            padding-top: 40px;
+            color: $color-intergalactic;
+        }
+        p{
+            font-family: montserrat;
+            color: $color-tetsu;
+        }
+        .hashtags-cards{
+            display: flex;
+            gap: 40px;
+            h3{
+                font-family: roboto mono;
+                font-size: small;
+                color: $color-tetsu;
+                background-color: $color-light-lila;
+                padding: 7px;
+                border-radius: 30px;
+            }
+            .destacado-card{
+                background-color: $color-tetsu;
+                color: $color-neon-yellow;
+            }
+        }
+    }
+}

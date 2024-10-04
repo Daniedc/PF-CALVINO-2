@@ -1,0 +1,244 @@
+@font-face {
+  font-family: nyght;
+  src: url(../fonts/NyghtSerif-BoldItalic.woff);
+}
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body .contenedor-home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header .custom-navbar {
+  background-color: #17194C;
+}
+header .custom-navbar .container-fluid {
+  padding: 20px;
+}
+header .custom-navbar .container-fluid .navbar-brand img {
+  height: 100%;
+}
+header .custom-navbar .nav-link {
+  color: #FDF7E7;
+  font-family: montserrat;
+}
+header .custom-navbar .nav-link:hover {
+  color: #D8E63B;
+}
+header .custom-navbar .navbar-toggler {
+  border-color: transparent;
+}
+header .custom-navbar .navbar-toggler:focus, header .custom-navbar .navbar-toggler:hover {
+  background-color: transparent;
+}
+header .custom-navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(216, 230, 59, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+main .banner-home .banner-desktop {
+  background-image: url("../imagenes/banners/banner-home.jpg");
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.introduccion-info {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(#DAD4FC, #FDF7E7);
+}
+.introduccion-info p {
+  font-family: montserrat;
+  color: #17194C;
+  font-size: 40px;
+}
+.introduccion-info p span {
+  font-family: nyght;
+}
+.introduccion-info img {
+  height: 150px;
+}
+
+section {
+  background-color: #FDF7E7;
+  padding: 40px;
+}
+section h1 {
+  font-family: montserrat;
+  color: #17194C;
+  text-align: center;
+  padding-bottom: 80px;
+}
+section .cards-trabajos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 60px;
+}
+section .cards-trabajos .card-1 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+section .cards-trabajos .card-1 .card-informacion h2 {
+  font-family: montserrat;
+  font-weight: 800;
+  font-size: 20px;
+  padding-top: 40px;
+  color: #273186;
+}
+section .cards-trabajos .card-1 .card-informacion p {
+  font-family: montserrat;
+  color: #17194C;
+}
+section .cards-trabajos .card-1 .card-informacion .hashtags-cards {
+  display: flex;
+  gap: 40px;
+}
+section .cards-trabajos .card-1 .card-informacion .hashtags-cards h3 {
+  font-family: roboto mono;
+  font-size: small;
+  color: #17194C;
+  background-color: #DAD4FC;
+  padding: 7px;
+  border-radius: 30px;
+}
+section .cards-trabajos .card-1 .card-informacion .hashtags-cards .destacado-card {
+  background-color: #17194C;
+  color: #D8E63B;
+}
+section .cards-trabajos .card-2 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+section .cards-trabajos .card-2 .card-informacion h2 {
+  font-family: montserrat;
+  font-weight: 800;
+  font-size: 20px;
+  padding-top: 40px;
+  color: #273186;
+}
+section .cards-trabajos .card-2 .card-informacion p {
+  font-family: montserrat;
+  color: #17194C;
+}
+section .cards-trabajos .card-2 .card-informacion .hashtags-cards {
+  display: flex;
+  gap: 40px;
+}
+section .cards-trabajos .card-2 .card-informacion .hashtags-cards h3 {
+  font-family: roboto mono;
+  font-size: small;
+  color: #17194C;
+  background-color: #DAD4FC;
+  padding: 7px;
+  border-radius: 30px;
+}
+section .cards-trabajos .card-2 .card-informacion .hashtags-cards .destacado-card {
+  background-color: #17194C;
+  color: #D8E63B;
+}
+section .cards-trabajos .card-3 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+section .cards-trabajos .card-3 .card-informacion h2 {
+  font-family: montserrat;
+  font-weight: 800;
+  font-size: 20px;
+  padding-top: 40px;
+  color: #273186;
+}
+section .cards-trabajos .card-3 .card-informacion p {
+  font-family: montserrat;
+  color: #17194C;
+}
+section .cards-trabajos .card-3 .card-informacion .hashtags-cards {
+  display: flex;
+  gap: 40px;
+}
+section .cards-trabajos .card-3 .card-informacion .hashtags-cards h3 {
+  font-family: roboto mono;
+  font-size: small;
+  color: #17194C;
+  background-color: #DAD4FC;
+  padding: 7px;
+  border-radius: 30px;
+}
+section .cards-trabajos .card-3 .card-informacion .hashtags-cards .destacado-card {
+  background-color: #17194C;
+  color: #D8E63B;
+}
+section .cards-trabajos .card-4 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+section .cards-trabajos .card-4 .card-informacion h2 {
+  font-family: montserrat;
+  font-weight: 800;
+  font-size: 20px;
+  padding-top: 40px;
+  color: #273186;
+}
+section .cards-trabajos .card-4 .card-informacion p {
+  font-family: montserrat;
+  color: #17194C;
+}
+section .cards-trabajos .card-4 .card-informacion .hashtags-cards {
+  display: flex;
+  gap: 40px;
+}
+section .cards-trabajos .card-4 .card-informacion .hashtags-cards h3 {
+  font-family: roboto mono;
+  font-size: small;
+  color: #17194C;
+  background-color: #DAD4FC;
+  padding: 7px;
+  border-radius: 30px;
+}
+section .cards-trabajos .card-4 .card-informacion .hashtags-cards .destacado-card {
+  background-color: #17194C;
+  color: #D8E63B;
+}
+
+footer {
+  background-color: #17194C;
+}
+footer p {
+  color: #EFEEE9;
+  font-family: roboto mono;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+footer .redes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+footer .redes a img {
+  height: 70%;
+}
+
+/* mobile */
+@media (max-width: 320px) {
+  .contenedor-home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
