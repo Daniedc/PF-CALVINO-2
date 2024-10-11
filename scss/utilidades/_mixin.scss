@@ -34,3 +34,147 @@
         }
     }
 }
+
+@mixin texto-trabajos{
+    img{
+        height: 30px;
+        margin-bottom: 20px;
+    }
+    h3{
+        color: $color-neon-yellow;
+        font-family: roboto mono;
+        font-size: 16px;
+    }
+    p{
+        font-family: montserrat;
+        color: $color-crema;
+    }
+}
+
+@mixin bajada-type-trabajos{
+    width: 50%;
+    h4{
+        color: $color-intergalactic;
+        font-family: roboto mono;
+    }
+    h5{
+        color: $color-lila;
+        font-family: roboto mono;
+        font-size: small;
+    }
+    p{
+        color: $color-intergalactic;
+        font-family: montserrat;
+    }
+    .btn-section-trabajos{
+        background-color: $color-tetsu;
+        border-radius: 20px;
+        a{
+            font-family: roboto mono;
+            font-size: 14px;
+            padding: 10px;
+            color: $color-crema;
+            &:hover{
+                color: $color-neon-yellow;
+            }
+        }
+    }
+}
+
+@mixin tarjeta-mision-superposicion{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    position: relative;
+}
+
+
+@mixin texto-card-clientes{
+    width: 400px;
+            height: 400px;
+            padding: 60px;
+            border-radius: 40px;
+            background-color: $color-crema;
+            position: relative;
+            margin-left: 20px;
+            box-shadow: 1px 1px 20px $color-light-lila;
+            h4{
+                font-family: roboto mono;
+                color: $color-tetsu;
+              }
+              h5{
+                font-family: roboto mono;
+                font-size: small;
+                color: nth($paleta, 3);
+              }
+              p{
+                font-family: montserrat;
+                color: nth($paleta, 3);
+              }
+}
+
+@mixin servicios-x{
+    padding: 40px;
+    h3{
+        font-family: roboto mono;
+        color: $color-tetsu;
+        font-size: 18px;
+    }
+    p{
+        font-family: montserrat;
+        color: $color-tetsu;
+    }
+    .btn-primary{
+        background-color: $color-camel;
+        border: 2px $color-camel;
+        font-family: roboto mono;
+        &:hover{
+            background-color: $color-tetsu;
+            color: $color-cloud-dancer;
+        }
+    }
+    .modal-content{
+        background-color: $color-crema;
+    }
+    .modal-header{
+        font-family: roboto mono;
+        color: $color-tetsu;
+        background-color: $color-light-lila;
+    }
+    .modal-body{
+        span{
+            font-family: montserrat;
+            font-weight: 600;
+            padding-left: 30px;
+            color: $color-tetsu;
+        }
+        ul{
+            padding-top: 10px;
+            list-style: none;
+            font-family: montserrat;
+            color: $color-tetsu;
+            font-weight: 400;
+            li{
+                background-image: url("../imagenes/miscelaneas/misc-estrella-engordar-36.png");
+                background-size: 20px;
+                background-repeat: no-repeat;
+                padding-left: 30px;
+            }
+        }
+        p{
+            font-family: roboto mono;
+            color: $color-tetsu;
+            padding-left: 30px;
+        }
+    }
+    .btn-secondary{
+        background-color: $color-light-lila;
+        font-family: roboto mono;
+        color: $color-tetsu;
+        &:hover{
+            background-color: $color-tetsu;
+            color: $color-light-lila;
+        }
+    }
+}

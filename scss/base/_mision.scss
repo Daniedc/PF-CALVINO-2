@@ -1,0 +1,364 @@
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+body{
+    .contenedor-mision{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+main{
+    .banner-mision{
+        display: flex;
+        width: 100%;
+        height: 600px;
+        align-items: center;
+        background-color: $color-tetsu;
+        .texto-mision{
+            justify-content: center;
+            flex-direction: column;
+            padding: 60px;
+            width: 50%;
+            h1{
+                color: $color-crema;
+                font-family: roboto mono;
+                span{
+                    color: $color-lila;
+                }
+            }
+            h2{
+                color: $color-nordic;
+                font-family: roboto mono;
+                font-size: 16px;
+                letter-spacing: 5px;
+                padding-top: 10px;
+            }
+            p{
+                color: $color-crema;
+                font-family: montserrat;
+                padding-top: 10px;
+            }
+            h3{
+                color: $color-neon-yellow;
+                font-family: roboto mono;
+                font-size: 14px;
+            }
+        }
+        .contacto-banner{
+            padding-top: 20px;
+            display: flex;
+            gap: 40px;
+            span{
+                background-color: $color-neon-yellow;
+                color: $color-tetsu;
+                font-family: roboto mono;
+                padding: 10px;
+                border-radius: 30px;
+            }
+            .btn-section-mision{
+                background-color: $color-lila;
+                color: $color-tetsu;
+                border-radius: 30px;
+                padding: 10px;
+                font-family: roboto mono;
+                &:hover{
+                    background-color: $color-neon-yellow;
+                    color: $color-tetsu;
+                }
+            }
+        }
+    }
+    .tarjetas-mision{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        .tarjeta-mision-1{
+            margin-top: 40px;
+            position: relative;
+            padding: 10px;
+            .texto-card-clientes{
+                background-color: $color-crema;
+                border-radius: 10px;
+                padding: 30px;
+                box-shadow: 0 4px 8px $color-light-lila;
+                border: 2px solid $color-light-lila;
+                position: relative;
+                z-index: 2;
+                height: 500px;
+                h4{
+                    color: $color-intergalactic;
+                    font-family: roboto mono;
+                }
+                p{
+                    color: $color-tetsu;
+                    font-family: montserrat;
+                    span{
+                        font-family: roboto mono;
+                        color: $color-camel;
+                    }
+                }
+            }
+            .misc-estrella{
+                position: absolute;
+                top: -45px;
+                left: 480px;
+                z-index: 1;
+            }
+        }
+        .tarjeta-mision-2{
+            margin-top: 40px;
+            position: relative;
+            padding: 10px;
+            .texto-card-clientes{
+                background-color: $color-crema;
+                border-radius: 10px;
+                padding: 30px;
+                box-shadow: 0 4px 8px $color-light-lila;
+                border: 2px solid $color-light-lila;
+                position: relative;
+                z-index: 2;
+                height: 500px;
+                h4{
+                    color: $color-intergalactic;
+                    font-family: roboto mono;
+                }
+                p{
+                    color: $color-tetsu;
+                    font-family: montserrat;
+                    span{
+                        font-family: roboto mono;
+                        color: $color-camel;
+                    }
+                }
+            }
+            .misc-estrella{
+                position: absolute;
+                top: -45px;
+                left: 480px;
+                z-index: 1;
+            }
+        }
+        .tarjeta-mision-3{
+            margin-top: 40px;
+            position: relative;
+            padding: 10px;
+            .texto-card-clientes{
+                background-color: $color-crema;
+                border-radius: 10px;
+                padding: 30px;
+                box-shadow: 0 4px 8px $color-light-lila;
+                position: relative;
+                z-index: 2;
+                height: 500px;
+                h4{
+                    color: $color-intergalactic;
+                    font-family: roboto mono;
+                }
+                p{
+                    color: $color-tetsu;
+                    font-family: montserrat;
+                    span{
+                        font-family: roboto mono;
+                        color: $color-camel;
+                    }
+                }
+            }
+            .misc-estrella{
+                position: absolute;
+                top: -45px;
+                left: 480px;
+                z-index: 1;
+            }
+        }
+    }
+    .contenedor-expertice{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        align-content: center;
+        padding: 20px;
+        img{
+            width: 100px;
+        }
+    }
+}
+
+@media (max-width: 575px){
+    .contenedor-mision{
+        main{
+            .banner-mision{
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+                .texto-mision{
+                    width: 100%;
+                    h1{
+                        font-size: 60px;
+                    }
+                }
+                .img-mision{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .tarjetas-mision{
+                display: flex;
+                flex-direction: column;
+                .misc-estrella{
+                    left: 400px;
+                }
+                .texto-card-clientes{
+                    height: 400px;
+                }
+            }
+            .contenedor-expertice{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    .contenedor-mision{
+        main{
+            .banner-mision{
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+                .texto-mision{
+                    width: 100%;
+                    h1{
+                        font-size: 60px;
+                    }
+                }
+                .img-mision{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .tarjetas-mision{
+                display: flex;
+                flex-direction: column;
+                .misc-estrella{
+                    left: 400px;
+                }
+            }
+            .contenedor-expertice{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .contenedor-mision{
+        main{
+            .banner-mision{
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+                .texto-mision{
+                    width: 100%;
+                    h1{
+                        font-size: 60px;
+                    }
+                }
+                .img-mision{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .tarjetas-mision{
+                display: flex;
+                flex-direction: column;
+                .misc-estrella{
+                    left: 850px;
+                }
+            }
+            .contenedor-expertice{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .contenedor-mision{
+        main{
+            .banner-mision{
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+                .texto-mision{
+                    width: 100%;
+                    h1{
+                        font-size: 60px;
+                    }
+                }
+                .img-mision{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .tarjetas-mision{
+                display: flex;
+                flex-direction: column;
+                .misc-estrella{
+                    left: 850px;
+                }
+            }
+            .contenedor-expertice{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px){
+    .contenedor-mision{
+        main{
+            .banner-mision{
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+                .texto-mision{
+                    width: 100%;
+                    h1{
+                        font-size: 60px;
+                    }
+                }
+                .img-mision{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .tarjetas-mision{
+                display: flex;
+                flex-direction: column;
+                .misc-estrella{
+                    left: 1150px;
+                }
+            }
+            .contenedor-expertice{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

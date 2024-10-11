@@ -1,0 +1,440 @@
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+body{
+    .contenedor-trabajos{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: $color-crema;
+    }
+}
+
+main{
+    .banner-trabajos{
+        display: flex;
+        background-color: $color-lila;
+        width: 100%;
+        height: 400px;
+        .banner-text{
+            padding: 60px;
+            h1{
+                font-family: roboto mono;
+                color: $color-tetsu;
+                span{
+                    color: $color-crema;
+                }
+            }
+            h2{
+                font-family: roboto mono;
+                color: $color-tetsu;
+                font-size: 16px;
+                letter-spacing: 5px;
+            }
+            img{
+                height: 50px;
+            }
+            p{
+                font-family: montserrat;
+                color: $color-tetsu;
+            }
+        }
+        .banner-img{
+            img{
+            height: 100%;
+            }
+        }
+    }
+    .secciones-trabajos{
+        display: flex;
+        background-color: $color-tetsu;
+        color: $color-crema;
+        padding: 60px;
+        gap: 20px;
+        align-content: space-around;
+        .branding-trabajos{
+            width: 25%;
+            @include texto-trabajos;
+        }
+        .ilustracion-trabajos{
+            width: 25%;
+            @include texto-trabajos;
+        }
+        .redes-trabajos{
+            width: 25%;
+            @include texto-trabajos;
+        }
+        .editorial-trabajos{
+            width: 25%;
+            @include texto-trabajos;
+        }
+    }
+    .imagenes-trabajos{
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: auto auto auto auto auto;
+
+        .portfolio-branding{
+            display: flex;
+            gap: 20px;
+            padding-bottom: 40px;
+            height: 550px;
+            align-items: center;
+            .bajada-branding-trabajos{
+                @include bajada-type-trabajos;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .trabajo-1{
+                width: 50%;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+
+            }
+        }
+        .portfolio-ilustracion{
+            display: flex;
+            gap: 20px;
+            padding-bottom: 40px;
+            align-items: center;
+            .bajada-ilustracion-trabajos{
+                @include bajada-type-trabajos;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .trabajo-2{
+                width: 50%;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .portfolio-redes{
+            display: flex;
+            gap: 20px;
+            padding-bottom: 40px;
+            align-items: center;
+            .bajada-trabajos-redes{
+                @include bajada-type-trabajos;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .trabajo-3{
+                width: 50%;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .portfolio-editorial{
+            display: flex;
+            gap: 20px;
+            padding-bottom: 40px;
+            align-items: center;
+            .bajada-trabajos-editorial{
+                @include bajada-type-trabajos;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .trabajo-4{
+                width: 50%;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        
+    }
+    .video-smoke{
+            padding: 0;
+            h4{
+                color: $color-intergalactic;
+                font-family: roboto mono;
+                text-align: center;
+                span{
+                    color: $color-lila;
+                }
+            }
+            .contenedor-video{
+                display: flex;
+                justify-content:center;
+
+                iframe{
+                    width: 800px;
+                    height: 450px;
+                }
+            }
+        }
+}
+
+@media (max-width: 575px){
+    .contenedor-trabajos{
+        main{
+            .banner-trabajos{
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+                .banner-text{
+                    h1{
+                        font-size: 60px;
+                    }
+                    h2{
+                        font-size: 23px;
+                    }
+                    img{
+                        display: none;
+                    }
+                    p{
+                        font-size: 30px;
+                        padding-top: 40px;
+                    }
+                }
+
+                .banner-img{
+                    img{
+                        display: none;
+                    }
+                }
+            }
+            .secciones-trabajos{
+                display: flex;
+                flex-direction: column;
+                .branding-trabajos{
+                    width: 100%;
+                }
+                .ilustracion-trabajos{
+                    width: 100%;
+                }
+                .redes-trabajos{
+                    width: 100%;
+                }
+                .editorial-trabajos{
+                    width: 100%;
+                }
+            }
+        }
+
+        section{
+            .imagenes-trabajos{
+                display: flex;
+                flex-direction: column;
+                .portfolio-branding{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    height: fit-content;
+                    .bajada-branding-trabajos{
+                        width: 100%;
+                    }
+                    .trabajo-1{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .portfolio-ilustracion{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    height: fit-content;
+                    .bajada-ilustracion-trabajos{
+                        width: 100%;
+                    }
+                    .trabajo-2{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .portfolio-redes{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    height: fit-content;
+                    .bajada-trabajos-redes{
+                        width: 100%;
+                    }
+                    .trabajo-3{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .portfolio-editorial{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    height: fit-content;
+                    .bajada-trabajos-editorial{
+                        width: 100%;
+                    }
+                    .trabajo-4{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    .contenedor-trabajos{
+        main{
+            .banner-trabajos{
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+                .banner-text{
+                    h1{
+                        font-size: 60px;
+                    }
+                    h2{
+                        font-size: 30px;
+                    }
+                    img{
+                        display: none;
+                    }
+                    p{
+                        font-size: 30px;
+                        padding-top: 20px;
+                    }
+                }
+                .banner-img{
+                    display: none;
+                }
+            }
+            .secciones-trabajos{
+                display: flex;
+                flex-direction: column;
+
+                .branding-trabajos, .ilustracion-trabajos, .redes-trabajos, .editorial-trabajos{
+                    width: 100%;
+                }
+            }
+        }
+
+        section{
+            .imagenes-trabajos{
+                .portfolio-branding, .portfolio-ilustracion, .portfolio-redes, .portfolio-editorial{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    height: fit-content;
+                }
+                .bajada-branding-trabajos, .bajada-ilustracion-trabajos, .bajada-trabajos-redes, .bajada-trabajos-editorial{
+                    width: 100%;
+                }
+                .trabajo-1, .trabajo-2, .trabajo-3, .trabajo-4{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .contenedor-trabajos{
+        main{
+            .banner-trabajos{
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+                .banner-text{
+                    h1{
+                        font-size: 60px;
+                    }
+                    h2{
+                        font-size: 30px;
+                    }
+                    img{
+                        display: none;
+                    }
+                    p{
+                        font-size: 30px;
+                        padding-top: 20px;
+                    }
+                }
+                .banner-img{
+                    display: none;
+                }
+            }
+            .secciones-trabajos{
+                display: flex;
+                flex-direction: column;
+
+                .branding-trabajos, .ilustracion-trabajos, .redes-trabajos, .editorial-trabajos{
+                    width: 100%;
+                }
+            }
+        }
+
+        section{
+            .imagenes-trabajos{
+                .portfolio-branding, .portfolio-ilustracion, .portfolio-redes, .portfolio-editorial{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    height: fit-content;
+                }
+                .bajada-branding-trabajos, .bajada-ilustracion-trabajos, .bajada-trabajos-redes, .bajada-trabajos-editorial{
+                    width: 100%;
+                }
+                .trabajo-1, .trabajo-2, .trabajo-3, .trabajo-4{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .contenedor-trabajos{
+        main{
+            .banner-trabajos{
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+                .banner-text{
+                    h1{
+                        font-size: 60px;
+                    }
+                    h2{
+                        font-size: 30px;
+                    }
+                    img{
+                        display: none;
+                    }
+                    p{
+                        font-size: 30px;
+                        padding-top: 20px;
+                    }
+                }
+                .banner-img{
+                    display: none;
+                }
+            }
+            .secciones-trabajos{
+                display: flex;
+                flex-direction: column;
+
+                .branding-trabajos, .ilustracion-trabajos, .redes-trabajos, .editorial-trabajos{
+                    width: 100%;
+                }
+            }
+        }
+
+        section{
+            .imagenes-trabajos{
+                .portfolio-branding, .portfolio-ilustracion, .portfolio-redes, .portfolio-editorial{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    height: fit-content;
+                }
+                .bajada-branding-trabajos, .bajada-ilustracion-trabajos, .bajada-trabajos-redes, .bajada-trabajos-editorial{
+                    width: 100%;
+                }
+                .trabajo-1, .trabajo-2, .trabajo-3, .trabajo-4{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

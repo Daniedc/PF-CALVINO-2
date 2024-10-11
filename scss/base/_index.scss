@@ -1,11 +1,13 @@
 @import "../utilidades/variables";
 @import "../utilidades/mixin";
+@import "../utilidades/listas";
 
 body{
         .contenedor-home{
             height: 100vh;
             display: flex;
             flex-direction: column;
+            background-color: $color-crema;
         }
 }
 
@@ -44,12 +46,19 @@ header{
 main{
     .banner-home{
         .banner-desktop{
-            background-image: url('../imagenes/banners/banner-home.jpg');
+            background-image: url("../imagenes/banners/banner-home.jpg");
             width: 100%;
-            height: auto;
+            height: 600px;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+        }
+        .misc-cinta{
+            img{
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
         }
         }
     }
@@ -63,7 +72,8 @@ main{
             color: $color-tetsu;
             font-size: 40px;
             span{
-                font-family: nyght;
+                font-family: roboto mono;
+                color: nth($paleta-secundaria, 3);
             }
         }
         img{
@@ -121,11 +131,142 @@ footer{
     }
 }
 
-/* mobile */
-@media (max-width: 320px){
+//responsive
+
+
+@media (max-width: 575px){
     .contenedor-home{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
+        display: flex;
+        flex-direction: column;
+
+        main{
+            .banner-home{
+                .banner-desktop{
+                    background-image: url("../imagenes/banners/banner-home-320px.jpg");
+                }
+                .misc-cinta{
+                    img{
+                        display: none;
+                    }
+                }
+            }
+
+            .introduccion-info{
+                display: flex;
+                flex-direction: column;
+                padding: 40px;
+                p{
+                    text-align: justify;
+                    font-size: 20px;
+                }
+                .ilus-ojo-index{
+                    text-align: center;
+                }
+            }
+        }
+
+        section{
+            h1{
+                padding-bottom: 20px;
+            }
+            .cards-trabajos{
+                display: flex;
+                flex-direction: column;
+                .card-1{
+                    .hashtags-cards{
+                        justify-content: center;
+                        padding-left: 20px;
+                        padding-right: 30px;
+                    }
+                }
+                .card-2{
+                    .hashtags-cards{
+                        justify-content: center;
+                        padding-left: 20px;
+                        padding-right: 30px;
+                    }
+                }
+                .card-3{
+                    .hashtags-cards{
+                    justify-content: center;
+                    padding-left: 20px;
+                    padding-right: 30px;
+                    }
+                }
+                .card-4{
+                    .hashtags-cards{
+                    justify-content: center;
+                    padding-left: 20px;
+                    padding-right: 30px;
+                    }
+                }
+            }
         }
     }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    .contenedor-home{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+
+        main{
+            .banner-home{
+                .banner-desktop{
+                    background-image: url("../imagenes/banners/banner-home-700-40.png");
+                }
+                .misc-cinta{
+                    img{
+                        display: none;
+                    }
+                }
+                .introduccion-info{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 60px;
+                    .ilus-ojo-index{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        section{
+            .cards-trabajos{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .contenedor-home{
+
+        main{
+            .banner-home{
+                .misc-cinta{
+                    img{
+                        display: none;
+                    }
+                }
+                .introduccion-info{
+                    display: flex;
+                    flex-direction: column;
+                    .ilus-ojo-index{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        section{
+            .cards-trabajos{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
