@@ -267,8 +267,6 @@ footer .redes a img {
   }
   .contenedor-home section .cards-trabajos .card-1 .hashtags-cards {
     justify-content: center;
-    padding-left: 20px;
-    padding-right: 30px;
   }
   .contenedor-home section .cards-trabajos .card-2 .hashtags-cards {
     justify-content: center;
@@ -1058,7 +1056,7 @@ main .contenedor-expertice img {
     left: 400px;
   }
   .contenedor-mision main .tarjetas-mision .texto-card-clientes {
-    height: 400px;
+    height: fit-content;
   }
   .contenedor-mision main .contenedor-expertice img {
     width: 100%;
@@ -1522,8 +1520,12 @@ main section .faqs .desplegable-faqs details summary {
   .contenedor-servicios main section .faqs .faqs-texto img {
     display: none;
   }
+  .contenedor-servicios main section .faqs .faqs-texto p {
+    text-align: center;
+    width: fit-content;
+  }
   .contenedor-servicios main section .faqs .desplegable-faqs details {
-    width: 450px;
+    width: fit-content;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1544,8 +1546,11 @@ main section .faqs .desplegable-faqs details summary {
   .contenedor-servicios main section .faqs .faqs-texto img {
     display: none;
   }
+  .contenedor-servicios main section .faqs .faqs-texto p {
+    width: fit-content;
+  }
   .contenedor-servicios main section .faqs .desplegable-faqs details {
-    width: 450px;
+    width: fit-content;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1566,8 +1571,11 @@ main section .faqs .desplegable-faqs details summary {
   .contenedor-servicios main section .faqs .faqs-texto img {
     display: none;
   }
+  .contenedor-servicios main section .faqs .faqs-texto p {
+    width: fit-content;
+  }
   .contenedor-servicios main section .faqs .desplegable-faqs details {
-    width: 600px;
+    width: fit-content;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1588,8 +1596,11 @@ main section .faqs .desplegable-faqs details summary {
   .contenedor-servicios main section .faqs .faqs-texto img {
     display: none;
   }
+  .contenedor-servicios main section .faqs .faqs-texto p {
+    width: fit-content;
+  }
   .contenedor-servicios main section .faqs .desplegable-faqs details {
-    width: 800px;
+    width: fit-content;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -1610,8 +1621,11 @@ main section .faqs .desplegable-faqs details summary {
   .contenedor-servicios main section .faqs .faqs-texto img {
     display: none;
   }
+  .contenedor-servicios main section .faqs .faqs-texto p {
+    width: fit-content;
+  }
   .contenedor-servicios main section .faqs .desplegable-faqs details {
-    width: 1100px;
+    width: fit-content;
   }
 }
 .contenedor-contacto {
@@ -1795,11 +1809,19 @@ main section .faqs .desplegable-faqs details summary {
     display: flex;
     flex-direction: column;
   }
+  .contenedor-contacto main .formulario-contacto .pastillas-formulario {
+    width: fit-content;
+  }
   .contenedor-contacto main .formulario-contacto .pastillas-formulario ul {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 400px;
+  }
+  .contenedor-contacto main .formulario-contacto .formulario-contacto-1 form {
+    text-align: center;
+  }
+  .contenedor-contacto main .formulario-contacto .formulario-contacto-1 form textarea {
+    width: 200px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1833,11 +1855,19 @@ main section .faqs .desplegable-faqs details summary {
     display: flex;
     flex-direction: column;
   }
+  .contenedor-contacto main .formulario-contacto .pastillas-formulario {
+    width: fit-content;
+  }
   .contenedor-contacto main .formulario-contacto .pastillas-formulario ul {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 400px;
+  }
+  .contenedor-contacto main .formulario-contacto .formulario-contacto-1 form {
+    text-align: center;
+  }
+  .contenedor-contacto main .formulario-contacto .formulario-contacto-1 form textarea {
+    width: 200px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1871,11 +1901,19 @@ main section .faqs .desplegable-faqs details summary {
     display: flex;
     flex-direction: column;
   }
+  .contenedor-contacto main .formulario-contacto .pastillas-formulario {
+    width: fit-content;
+  }
   .contenedor-contacto main .formulario-contacto .pastillas-formulario ul {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 400px;
+  }
+  .contenedor-contacto main .formulario-contacto .formulario-contacto-1 form {
+    text-align: center;
+  }
+  .contenedor-contacto main .formulario-contacto .formulario-contacto-1 form textarea {
+    width: 200px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1909,11 +1947,19 @@ main section .faqs .desplegable-faqs details summary {
     display: flex;
     flex-direction: column;
   }
+  .contenedor-contacto main .formulario-contacto .pastillas-formulario {
+    width: fit-content;
+  }
   .contenedor-contacto main .formulario-contacto .pastillas-formulario ul {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 400px;
+  }
+  .contenedor-contacto main .formulario-contacto .formulario-contacto-1 form {
+    text-align: center;
+  }
+  .contenedor-contacto main .formulario-contacto .formulario-contacto-1 form textarea {
+    width: 200px;
   }
 }
 
